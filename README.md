@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This repository contains the complete back-end and infrastructure for a foundational E-commerce platform, built as a final project for COMP-699A (Fall 2025). The core mandate was to move away from monolithic architecture to a **scalable, fault-tolerant Microservices design**.
+This repository contains the complete back-end and infrastructure for a foundational E-commerce platform. The core mandate was to move away from monolithic architecture to a **scalable, fault-tolerant Microservices design**.
 
 The entire system is containerized with Docker, proving the ability to deploy complex, decoupled services reliably.
 

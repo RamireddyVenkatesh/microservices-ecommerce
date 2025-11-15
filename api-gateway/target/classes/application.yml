@@ -1,0 +1,40 @@
+server:
+  port: 8080
+  max-http-header-size: 64KB
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: product-service
+          uri: lb://product-service
+          predicates:
+            - Path=/api/products/**
+          filters:
+            - JwtAuthenticationFilter
+        - id: inventory-service
+          uri: lb://inventory-service
+          predicates:
+            - Path=/api/inventory/**
+          filters:
+            - JwtAuthenticationFilter
+  webflux:
+    cors:
+      enabled: false
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka
+  instance:
+    hostname: api-gateway
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG

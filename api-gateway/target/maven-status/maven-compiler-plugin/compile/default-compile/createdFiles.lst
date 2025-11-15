@@ -1,0 +1,5 @@
+com\ecommerce\apigateway\config\SecurityConfig.class
+com\ecommerce\apigateway\ApiGatewayApplication.class
+com\ecommerce\apigateway\util\JwtGenerator.class
+com\ecommerce\apigateway\filter\JwtAuthenticationFilter$Config.class
+com\ecommerce\apigateway\filter\JwtAuthenticationFilter.class

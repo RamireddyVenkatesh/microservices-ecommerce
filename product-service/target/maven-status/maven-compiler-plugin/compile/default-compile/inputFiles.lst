@@ -1,0 +1,10 @@
+C:\Users\User\Downloads\microservices-ecommerce\product-service\src\main\java\com\ecommerce\productservice\dto\InventoryResponse.java
+C:\Users\User\Downloads\microservices-ecommerce\product-service\src\main\java\com\ecommerce\productservice\model\Product.java
+C:\Users\User\Downloads\microservices-ecommerce\product-service\src\main\java\com\ecommerce\productservice\client\InventoryServiceClient.java
+C:\Users\User\Downloads\microservices-ecommerce\product-service\src\main\java\com\ecommerce\productservice\controller\ProductController.java
+C:\Users\User\Downloads\microservices-ecommerce\product-service\src\main\java\com\ecommerce\productservice\dto\ProductWithStockDto.java
+C:\Users\User\Downloads\microservices-ecommerce\product-service\src\main\java\com\ecommerce\productservice\service\ProductService.java
+C:\Users\User\Downloads\microservices-ecommerce\product-service\src\main\java\com\ecommerce\productservice\ProductServiceApplication.java
+C:\Users\User\Downloads\microservices-ecommerce\product-service\src\main\java\com\ecommerce\productservice\config\WebClientConfig.java
+C:\Users\User\Downloads\microservices-ecommerce\product-service\src\main\java\com\ecommerce\productservice\repository\ProductRepository.java
+C:\Users\User\Downloads\microservices-ecommerce\product-service\src\main\java\com\ecommerce\productservice\dto\InventoryCreationRequest.java

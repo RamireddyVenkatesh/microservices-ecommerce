@@ -1,0 +1,10 @@
+com\ecommerce\productservice\service\ProductService.class
+com\ecommerce\productservice\dto\InventoryCreationRequest.class
+com\ecommerce\productservice\dto\ProductWithStockDto.class
+com\ecommerce\productservice\ProductServiceApplication.class
+com\ecommerce\productservice\client\InventoryServiceClient.class
+com\ecommerce\productservice\repository\ProductRepository.class
+com\ecommerce\productservice\dto\InventoryResponse.class
+com\ecommerce\productservice\model\Product.class
+com\ecommerce\productservice\controller\ProductController.class
+com\ecommerce\productservice\config\WebClientConfig.class

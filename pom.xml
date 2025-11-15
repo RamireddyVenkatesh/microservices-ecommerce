@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>com.ecommerce</groupId>
+    <artifactId>microservices-ecommerce-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging> <!-- IMPORTANT: Packaging must be 'pom' for a parent project -->
+    
+    <name>Microservices E-commerce Parent</name>
+    <description>Parent POM for all Microservices in the E-commerce Project</description>
+
+    <!-- 
+        Centralized Version Management (Inheritance for all modules)
+        The Spring Boot parent defines the core versions.
+    -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.0</version> <!-- Your consistent version -->
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <properties>
+        <java.version>17</java.version>
+        <spring-cloud.version>2023.0.0</spring-cloud.version>
+    </properties>
+
+    <!-- 
+        Define all sub-projects (modules)
+    -->
+    <modules>
+        <module>service-registry</module>
+        <module>api-gateway</module>
+        <module>product-service</module>
+        <module>inventory-service</module>
+        <!-- You would also add your React project if it were a Maven/Node mix build, but we'll skip for simplicity -->
+    </modules>
+    
+    <!-- 
+        Centralized Dependency Management (Optional, but good practice)
+    -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <!-- No plugins needed here, just inherited by children -->
+        </plugins>
+    </build>
+
+</project>
